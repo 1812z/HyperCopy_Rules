@@ -1,0 +1,23 @@
+{
+  "id": "douyin_short_webview_resolve",
+  "name": "抖音短链模拟打开",
+  "category": "link",
+  "enabled": true,
+  "actionMode": "webview_resolve_and_open",
+  "matchRegex": ".*v\\.douyin\\.com.*",
+  "parameterRegex": "\/(?:note|video)\/([^\/?#]+)",
+  "triggerRegexes": [
+    ".*v\\.douyin\\.com.*"
+  ],
+  "extractionRegexes": [
+    "\/(?:note|video)\/([^\/?#]+)"
+  ],
+  "parseAfterRedirect": true,
+  "target": {
+    "type": "url",
+    "template": "snssdk1128:\/\/aweme\/detail\/${r1}",
+    "packageName": "com.ss.android.ugc.aweme",
+    "action": "android.intent.action.VIEW"
+  },
+  "createdAt": 1782840891151
+}
