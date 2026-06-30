@@ -1,0 +1,23 @@
+{
+  "id": "coolapk_link_open",
+  "name": "酷安链接打开",
+  "category": "link",
+  "enabled": true,
+  "actionMode": "direct_open",
+  "matchRegex": "^https?:\/\/(?:www\\.)?coolapk\\.com\/.+",
+  "parameterRegex": "^https?:\/\/(.+)$",
+  "triggerRegexes": [
+    "^https?:\/\/(?:www\\.)?coolapk\\.com\/.+"
+  ],
+  "extractionRegexes": [
+    "^https?:\/\/(.+)$"
+  ],
+  "parseAfterRedirect": false,
+  "target": {
+    "type": "intent",
+    "template": "intent:\/\/${raw:r1}#Intent;scheme=coolmarket;package=com.coolapk.market;end",
+    "packageName": "com.coolapk.market",
+    "action": "android.intent.action.VIEW"
+  },
+  "createdAt": 1782832100000
+}
