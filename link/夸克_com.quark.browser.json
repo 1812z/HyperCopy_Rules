@@ -1,0 +1,24 @@
+{
+  "id": "95680846-07d2-48dc-905b-c5fe4fa89f41",
+  "name": "夸克",
+  "category": "link",
+  "enabled": true,
+  "actionMode": "direct_open",
+  "matchRegex": "pan\\.quark\\.cn",
+  "parameterRegex": ".*(.+).*",
+  "triggerRegexes": [
+    "pan\\.quark\\.cn"
+  ],
+  "extractionRegexes": [
+    ".*(.+).*"
+  ],
+  "parseAfterRedirect": false,
+  "clearClipboardAfterJump": true,
+  "target": {
+    "type": "url",
+    "template": "qklink:\/\/www.uc.cn\/b20b84fd735a8dd3f7541129bacc4e9a?action=open_url&url=${url:input}",
+    "packageName": "com.quark.browser",
+    "action": "android.intent.action.VIEW"
+  },
+  "createdAt": 1782893786186
+}
