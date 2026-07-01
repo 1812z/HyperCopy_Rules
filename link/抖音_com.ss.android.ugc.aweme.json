@@ -1,6 +1,6 @@
 {
   "id": "douyin_short_webview_resolve",
-  "name": "抖音短链模拟打开",
+  "name": "抖音",
   "category": "link",
   "enabled": true,
   "actionMode": "webview_resolve_and_open",
