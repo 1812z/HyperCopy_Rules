@@ -1,6 +1,6 @@
 {
   "id": "bilibili_video_in_parse_open",
-  "name": "B站视频打开",
+  "name": "B站国际版视频打开",
   "category": "link",
   "enabled": true,
   "actionMode": "parse_and_open",

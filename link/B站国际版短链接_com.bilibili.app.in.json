@@ -1,6 +1,6 @@
 {
   "id": "bilibili_video_in_b23_open",
-  "name": "Bilibili短链接",
+  "name": "Bilibili国际版短链接",
   "category": "link",
   "enabled": true,
   "actionMode": "webview_resolve_and_open",
