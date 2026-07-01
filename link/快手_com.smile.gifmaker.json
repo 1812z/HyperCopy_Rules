@@ -1,0 +1,25 @@
+{
+  "name": "快手",
+  "category": "link",
+  "enabled": true,
+  "actionMode": "webview_resolve_and_open",
+  "matchRegex": ".*(?:kuaishou\\.com|chenzhongtech\\.com).*",
+  "parameterRegex": "(?:\\?|&)shareObjectId=([0-9]+)",
+  "triggerRegexes": [
+    ".*v\\.kuaishou\\.com.*",
+    ".*kuaishou\\.com.*",
+    ".*chenzhongtech\\.com.*"
+  ],
+  "extractionRegexes": [
+    "(?:\\?|&)shareObjectId=([0-9]+)"
+  ],
+  "parseAfterRedirect": true,
+  "clearClipboardAfterJump": true,
+  "target": {
+    "type": "url",
+    "template": "kwai://work/${r1}?enableSlidePlay=true&selectedPhotoId=${r1}&path=%2Frest%2Fn%2FopenShare%2Ffeed%2Fview%2Flist",
+    "packageName": "com.smile.gifmaker",
+    "action": "android.intent.action.VIEW"
+  },
+  "createdAt": 1782918046964
+}
