@@ -1,0 +1,23 @@
+{
+  "name": "美团",
+  "category": "link",
+  "enabled": true,
+  "actionMode": "direct_open",
+  "matchRegex": ".*dpurl\\.cn.*",
+  "parameterRegex": ".*(.+).*",
+  "triggerRegexes": [
+    ".*dpurl\\.cn.*"
+  ],
+  "extractionRegexes": [
+    ".*(.+).*"
+  ],
+  "parseAfterRedirect": false,
+  "clearClipboardAfterJump": true,
+  "target": {
+    "type": "url",
+    "template": "imeituan://www.meituan.com/web?notitlebar=1&url=${url:input}",
+    "packageName": "com.sankuai.meituan",
+    "action": "android.intent.action.VIEW"
+  },
+  "createdAt": 1782918046963
+}
