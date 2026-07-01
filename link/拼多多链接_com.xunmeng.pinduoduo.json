@@ -13,7 +13,7 @@
   "parseAfterRedirect": false,
   "target": {
     "type": "url",
-    "template": "${input}",
+    "template": "${url:input}",
     "packageName": "com.xunmeng.pinduoduo",
     "action": "android.intent.action.VIEW"
   },
