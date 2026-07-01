@@ -1,0 +1,21 @@
+{
+  "name": "Telegram",
+  "category": "link",
+  "enabled": true,
+  "actionMode": "direct_open",
+  "matchRegex": ".*t\\.me\\/.*",
+  "parameterRegex": "",
+  "triggerRegexes": [
+    ".*t\\.me\\/.*"
+  ],
+  "extractionRegexes": [
+    "https?:\\/\\/(?:www\\.)?t\\.me\\/([^\\/?#\\s]+)"
+  ],
+  "target": {
+    "type": "url",
+    "template": "tg:resolve?domain=${r1}",
+    "packageName": "org.telegram.messenger",
+    "action": "android.intent.action.VIEW"
+  },
+  "createdAt": 1782918046962
+}
