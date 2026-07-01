@@ -1,0 +1,21 @@
+{
+  "id": "pinduoduo_goods_parse_open",
+  "name": "拼多多链接打开",
+  "category": "link",
+  "enabled": true,
+  "actionMode": "direct_open",
+  "matchRegex": ".*yangkeduo\\.com.*",
+  "parameterRegex": "",
+  "triggerRegexes": [
+    ".*yangkeduo\\.com.*"
+  ],
+  "extractionRegexes": [],
+  "parseAfterRedirect": false,
+  "target": {
+    "type": "url",
+    "template": "${url:input}",
+    "packageName": "com.xunmeng.pinduoduo",
+    "action": "android.intent.action.VIEW"
+  },
+  "createdAt": 1782844051565
+}

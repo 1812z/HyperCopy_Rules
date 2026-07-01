@@ -1,0 +1,24 @@
+{
+  "id": "bilibili_video_in_b23_open",
+  "name": "Bilibili短链接",
+  "category": "link",
+  "enabled": true,
+  "actionMode": "webview_resolve_and_open",
+  "matchRegex": ".*b23\\.tv.*|.*bilibili\\.com\/video\/.*|.*bilibili\\.com\/bangumi\/.*",
+  "parameterRegex": "\/(video|bangumi)\/([A-Za-z0-9]+)",
+  "triggerRegexes": [
+    ".*b23\\.tv.*|.*bilibili\\.com\/video\/.*|.*bilibili\\.com\/bangumi\/.*"
+  ],
+  "extractionRegexes": [
+    "\/(video|bangumi|opus)\/([A-Za-z0-9]+)"
+  ],
+  "parseAfterRedirect": true,
+  "clearClipboardAfterJump": true,
+  "target": {
+    "type": "url",
+    "template": "bilibili:\/\/${p1}\/${p2}",
+    "packageName": "com.bilibili.app.in",
+    "action": "android.intent.action.VIEW"
+  },
+  "createdAt": 1782890650489
+}
