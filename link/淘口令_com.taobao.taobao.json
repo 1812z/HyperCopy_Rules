@@ -3,13 +3,13 @@
   "category": "link",
   "enabled": true,
   "actionMode": "direct_open",
-  "matchRegex": "[_\\$￥₳€£][a-zA-Z0-9]+[_\\$￥₳€£]",
-  "parameterRegex": ".*(.+).*",
+  "matchRegex": "[_\\$￥₳€£][a-zA-Z0-9]{6,20}[_\\$￥₳€£]",
+  "parameterRegex": "[_\\$￥₳€£][a-zA-Z0-9]{6,20}[_\\$￥₳€£]",
   "triggerRegexes": [
-    "[_\\$￥₳€£][a-zA-Z0-9]+[_\\$￥₳€£]"
+    "[_\\$￥₳€£][a-zA-Z0-9]{6,20}[_\\$￥₳€£]"
   ],
   "extractionRegexes": [
-    ".*(.+).*"
+    "([_\\$￥₳€£][a-zA-Z0-9]{6,20}[_\\$￥₳€£])"
   ],
   "parseAfterRedirect": false,
   "target": {
