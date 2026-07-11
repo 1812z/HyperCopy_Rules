@@ -3,13 +3,13 @@
   "category": "link",
   "enabled": true,
   "actionMode": "direct_open",
-  "matchRegex": "^https?:\/\/.*",
+  "matchRegex": "https?:\/\/[^\\s]+",
   "parameterRegex": ".*",
   "triggerRegexes": [
-    "^https?:\/\/.*"
+    "https?:\/\/[^\\s]+"
   ],
   "extractionRegexes": [
-    ".*"
+    "(https?:\/\/[^\\s]+)"
   ],
   "parseAfterRedirect": false,
   "target": {
