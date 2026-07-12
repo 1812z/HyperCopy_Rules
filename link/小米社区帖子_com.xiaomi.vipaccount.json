@@ -1,0 +1,24 @@
+{
+  "id": "xiaomi_community_post",
+  "name": "小米社区",
+  "category": "link",
+  "enabled": true,
+  "actionMode": "webview_resolve_and_open",
+  "matchRegex": ".*s\\.xiaomi\\.cn.*|.*web\\.vip\\.miui\\.com.*",
+  "parameterRegex": "postId=(\\d+)",
+  "triggerRegexes": [
+    ".*s\\.xiaomi\\.cn.*|.*web\\.vip\\.miui\\.com.*"
+  ],
+  "extractionRegexes": [
+    "postId=(\\d+)"
+  ],
+  "parseAfterRedirect": true,
+  "clearClipboardAfterJump": true,
+  "target": {
+    "type": "url",
+    "template": "mio:\/\/web.vip.miui.com\/page\/info\/mio\/mio\/detail?postId=${r1}",
+    "packageName": "com.xiaomi.vipaccount",
+    "action": "android.intent.action.VIEW"
+  },
+  "createdAt": 1783818719763
+}
