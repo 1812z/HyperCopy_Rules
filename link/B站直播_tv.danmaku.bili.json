@@ -4,20 +4,20 @@
   "category": "link",
   "enabled": true,
   "actionMode": "parse_and_open",
-  "matchRegex": ".*live.bilibili.com\/\\d+.*",
-  "parameterRegex": ".*live.bilibili.com\/(\\d+).*",
+  "matchRegex": ".*live.bilibili.com\/(h5\/)?\\d+.*",
+  "parameterRegex": ".*live.bilibili.com\/(h5\/)?(\\d+).*",
   "triggerRegexes": [
-    ".*live.bilibili.com\/\\d+.*"
+    ".*live.bilibili.com\/(h5\/)?\\d+.*"
   ],
   "extractionRegexes": [
-    ".*live.bilibili.com\/(\\d+).*"
+    ".*live.bilibili.com\/(h5\/)?(\\d+).*"
   ],
   "parseAfterRedirect": false,
   "target": {
     "type": "url",
-    "template": "bilibili:\/\/live\/${r1}",
+    "template": "bilibili:\/\/live\/${r1_2}",
     "packageName": "tv.danmaku.bili",
     "action": "android.intent.action.VIEW"
   },
-  "createdAt": 1784889541066
+  "createdAt": 1784889840496
 }
