@@ -43,7 +43,8 @@ export default defineConfig({
   rewrites: {
     'en/getting-started.md': 'en/getting-started.md',
     'en/index.md': 'en/index.md',
-    'en/rule-creation.md': 'en/rule-creation.md'
+    'en/rule-creation.md': 'en/rule-creation.md',
+    'en/rule-submission.md': 'en/rule-submission.md'
   },
 
   locales: {
@@ -89,12 +90,14 @@ function nav(lang: string) {
   if (lang === 'zh') {
     return [
       { text: '快速上手', link: '/getting-started', activeMatch: '/getting-started' },
-      { text: '制作规则', link: '/rule-creation', activeMatch: '/rule-creation' }
+      { text: '制作规则', link: '/rule-creation', activeMatch: '/rule-creation' },
+      { text: '上传规则', link: '/rule-submission', activeMatch: '/rule-submission' }
     ]
   }
   return [
     { text: 'Quick Start', link: '/en/getting-started', activeMatch: '/en/getting-started' },
-    { text: 'Create Rules', link: '/en/rule-creation', activeMatch: '/en/rule-creation' }
+    { text: 'Create Rules', link: '/en/rule-creation', activeMatch: '/en/rule-creation' },
+    { text: 'Submit Rules', link: '/en/rule-submission', activeMatch: '/en/rule-submission' }
   ]
 }
 
@@ -110,7 +113,8 @@ function sidebar(lang: string) {
       {
         text: '规则',
         items: [
-          { text: '制作规则', link: '/rule-creation' }
+          { text: '制作规则', link: '/rule-creation' },
+          { text: '上传规则', link: '/rule-submission' }
         ]
       }
     ]
@@ -125,7 +129,8 @@ function sidebar(lang: string) {
     {
       text: 'Rules',
       items: [
-        { text: 'Creating Rules', link: '/en/rule-creation' }
+        { text: 'Creating Rules', link: '/en/rule-creation' },
+        { text: 'Submitting Rules', link: '/en/rule-submission' }
       ]
     }
   ]
