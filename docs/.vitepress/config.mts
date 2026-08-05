@@ -44,7 +44,8 @@ export default defineConfig({
     'en/getting-started.md': 'en/getting-started.md',
     'en/index.md': 'en/index.md',
     'en/rule-creation.md': 'en/rule-creation.md',
-    'en/rule-submission.md': 'en/rule-submission.md'
+    'en/rule-submission.md': 'en/rule-submission.md',
+    'en/donors.md': 'en/donors.md'
   },
 
   locales: {
@@ -91,13 +92,15 @@ function nav(lang: string) {
     return [
       { text: '快速上手', link: '/getting-started', activeMatch: '/getting-started' },
       { text: '制作规则', link: '/rule-creation', activeMatch: '/rule-creation' },
-      { text: '上传规则', link: '/rule-submission', activeMatch: '/rule-submission' }
+      { text: '上传规则', link: '/rule-submission', activeMatch: '/rule-submission' },
+      { text: '赞助者', link: '/donors', activeMatch: '/donors' }
     ]
   }
   return [
     { text: 'Quick Start', link: '/en/getting-started', activeMatch: '/en/getting-started' },
     { text: 'Create Rules', link: '/en/rule-creation', activeMatch: '/en/rule-creation' },
-    { text: 'Submit Rules', link: '/en/rule-submission', activeMatch: '/en/rule-submission' }
+    { text: 'Submit Rules', link: '/en/rule-submission', activeMatch: '/en/rule-submission' },
+    { text: 'Donors', link: '/en/donors', activeMatch: '/en/donors' }
   ]
 }
 
@@ -116,6 +119,12 @@ function sidebar(lang: string) {
           { text: '制作规则', link: '/rule-creation' },
           { text: '上传规则', link: '/rule-submission' }
         ]
+      },
+      {
+        text: '支持',
+        items: [
+          { text: '赞助者', link: '/donors' }
+        ]
       }
     ]
   }
@@ -131,6 +140,12 @@ function sidebar(lang: string) {
       items: [
         { text: 'Creating Rules', link: '/en/rule-creation' },
         { text: 'Submitting Rules', link: '/en/rule-submission' }
+      ]
+    },
+    {
+      text: 'Support',
+      items: [
+        { text: 'Donors', link: '/en/donors' }
       ]
     }
   ]
