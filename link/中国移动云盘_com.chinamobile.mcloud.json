@@ -4,10 +4,10 @@
   "category": "link",
   "enabled": true,
   "actionMode": "direct_open",
-  "matchRegex": "yun\.139\.com",
+  "matchRegex": "yun\\.139\\.com",
   "parameterRegex": ".(.+).",
   "triggerRegexes": [
-    "yun\.139\.com"
+    "yun\\.139\\.com"
   ],
   "extractionRegexes": [
     ".(.+)."

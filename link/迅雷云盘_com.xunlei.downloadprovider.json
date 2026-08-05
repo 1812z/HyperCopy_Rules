@@ -4,10 +4,10 @@
   "category": "link",
   "enabled": true,
   "actionMode": "direct_open",
-  "matchRegex": "pan\.xunlei\.com",
+  "matchRegex": "pan\\.xunlei\\.com",
   "parameterRegex": ".(.+).",
   "triggerRegexes": [
-    "pan\.xunlei\.com"
+    "pan\\.xunlei\\.com"
   ],
   "extractionRegexes": [
     ".(.+)."

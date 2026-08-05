@@ -4,11 +4,11 @@
   "category": "link",
   "enabled": true,
   "actionMode": "direct_open",
-  "matchRegex": "aliyundrive\.com|alipan\.com",
+  "matchRegex": "aliyundrive\\.com|alipan\\.com",
   "parameterRegex": ".(.+).",
   "triggerRegexes": [
-    "aliyundrive\.com",
-    "alipan\.com"
+    "aliyundrive\\.com",
+    "alipan\\.com"
   ],
   "extractionRegexes": [
     ".(.+)."
