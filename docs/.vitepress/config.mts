@@ -37,7 +37,7 @@ export default defineConfig({
   },
 
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: 'https://github.com/user-attachments/assets/dc034ec0-90cf-4371-9ab0-132ca2527b32' }]
+    ['link', { rel: 'icon', type: 'image/png', href: '/icon.png' }]
   ],
 
   rewrites: {
@@ -73,7 +73,7 @@ export default defineConfig({
   },
 
   themeConfig: {
-    logo: 'https://github.com/user-attachments/assets/dc034ec0-90cf-4371-9ab0-132ca2527b32',
+    logo: '/icon.png',
     socialLinks: [
       { icon: 'github', link: 'https://github.com/1812z/HyperCopy' }
     ],
