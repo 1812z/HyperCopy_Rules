@@ -1,0 +1,22 @@
+{
+  "id": "cloud_link_139yun_com.chinamobile.mcloud",
+  "name": "中国移动云盘",
+  "category": "link",
+  "enabled": true,
+  "actionMode": "direct_open",
+  "matchRegex": "yun\.139\.com",
+  "parameterRegex": ".(.+).",
+  "triggerRegexes": [
+    "yun\.139\.com"
+  ],
+  "extractionRegexes": [
+    ".(.+)."
+  ],
+  "parseAfterRedirect": false,
+  "target": {
+    "type": "url",
+    "template": "${url:input}",
+    "packageName": "com.chinamobile.mcloud",
+    "action": "android.intent.action.VIEW"
+  }
+}
