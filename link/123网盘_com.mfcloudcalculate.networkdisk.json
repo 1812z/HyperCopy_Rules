@@ -3,15 +3,17 @@
   "name": "123网盘",
   "category": "link",
   "enabled": true,
-  "actionMode": "direct_open",
-  "matchRegex": "123pan\\.com|123pan\\.cn|www\\.123\\d{3}\\.com",
-  "parameterRegex": "\/123pan\/([^#&?.]*)",
+  "actionMode": "parse_and_open",
+  "matchRegex": "123pan\\.com",
+  "parameterRegex": "\\\/(?:s|123pan)\\\/([^#&?.\\\/]+)",
   "triggerRegexes": [
-    "123pan\\.com|123pan\\.cn|www\\.123\\d{3}\\.com"
+    "123pan\\.com",
+    "123pan\\.cn",
+    "www\\.123\\d{3}\\.com"
   ],
   "extractionRegexes": [
-    "\/s\/([^#&?.]*)",
-    "(?:\\?|&)pwd=([^#&\\?]*)(?:#|&|\\?|$)"
+    "\\\/(?:s|123pan)\\\/([^#&?.\\\/]+)",
+    "(?:[?&]pwd=|(?:提取码|访问码|密码)\\s*[:：]?\\s*)([^#&?\\s]+)"
   ],
   "parseAfterRedirect": false,
   "clearClipboardAfterJump": true,
@@ -20,6 +22,5 @@
     "template": "pan:\/\/umeng.com\/share\/list?sharePwd=${r2}&_sdk_=umeng&action=share_list&shareKey=${r1}",
     "packageName": "com.mfcloudcalculate.networkdisk",
     "action": "android.intent.action.VIEW"
-  },
-  "createdAt": 1782894585939
+  }
 }
