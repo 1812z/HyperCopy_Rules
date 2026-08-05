@@ -42,7 +42,8 @@ export default defineConfig({
 
   rewrites: {
     'en/getting-started.md': 'en/getting-started.md',
-    'en/index.md': 'en/index.md'
+    'en/index.md': 'en/index.md',
+    'en/rule-creation.md': 'en/rule-creation.md'
   },
 
   locales: {
@@ -87,11 +88,13 @@ export default defineConfig({
 function nav(lang: string) {
   if (lang === 'zh') {
     return [
-      { text: '快速上手', link: '/getting-started', activeMatch: '/getting-started' }
+      { text: '快速上手', link: '/getting-started', activeMatch: '/getting-started' },
+      { text: '制作规则', link: '/rule-creation', activeMatch: '/rule-creation' }
     ]
   }
   return [
-    { text: 'Quick Start', link: '/en/getting-started', activeMatch: '/en/getting-started' }
+    { text: 'Quick Start', link: '/en/getting-started', activeMatch: '/en/getting-started' },
+    { text: 'Create Rules', link: '/en/rule-creation', activeMatch: '/en/rule-creation' }
   ]
 }
 
@@ -103,6 +106,12 @@ function sidebar(lang: string) {
         items: [
           { text: '快速上手', link: '/getting-started' }
         ]
+      },
+      {
+        text: '规则',
+        items: [
+          { text: '制作规则', link: '/rule-creation' }
+        ]
       }
     ]
   }
@@ -111,6 +120,12 @@ function sidebar(lang: string) {
       text: 'Getting Started',
       items: [
         { text: 'Quick Start', link: '/en/getting-started' }
+      ]
+    },
+    {
+      text: 'Rules',
+      items: [
+        { text: 'Creating Rules', link: '/en/rule-creation' }
       ]
     }
   ]
