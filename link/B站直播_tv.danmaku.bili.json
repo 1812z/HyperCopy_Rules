@@ -1,0 +1,23 @@
+{
+  "id": "bilibili_live",
+  "name": "B站直播",
+  "category": "link",
+  "enabled": true,
+  "actionMode": "parse_and_open",
+  "matchRegex": ".*live.bilibili.com\/(h5\/)?\\d+.*",
+  "parameterRegex": ".*live.bilibili.com\/(h5\/)?(\\d+).*",
+  "triggerRegexes": [
+    ".*live.bilibili.com\/(h5\/)?\\d+.*"
+  ],
+  "extractionRegexes": [
+    ".*live.bilibili.com\/(h5\/)?(\\d+).*"
+  ],
+  "parseAfterRedirect": false,
+  "target": {
+    "type": "url",
+    "template": "bilibili:\/\/live\/${r1_2}",
+    "packageName": "tv.danmaku.bili",
+    "action": "android.intent.action.VIEW"
+  },
+  "createdAt": 1784889840496
+}

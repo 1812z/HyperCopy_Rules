@@ -1,0 +1,37 @@
+{
+  "id": "cloud_text_快递100_com.Kingdee.Express",
+  "name": "快递100-首页",
+  "category": "express",
+  "enabled": true,
+  "actionMode": "direct_open",
+  "matchRegex": "\\b(?:(?:SF|YT|YTO|ZTO|STO|YD|EMS|JD|JDB|JDC|JDD|JDG|JT|DPK|DPL|HTKY)\\d{9,20}|[A-Z]{2}\\d{9}[A-Z]{2}|50\\d{11}|7\\d{12,13}|43\\d{13}|46\\d{13}|79\\d{13}|777\\d{12}|77203\\d{10}|7353\\d{10}|43415\\d{10}|31250\\d{10}|268\\d{9}|368\\d{9}|58\\d{10})\\b",
+  "parameterRegex": "\\b([A-Z]{2}\\d{9}[A-Z]{2}|\\d{9,22})\\b",
+  "triggerRegexes": [
+    "\\b(?:SF|YT|YTO|ZTO|STO|YD|EMS|JD|JDB|JDC|JDD|JDG|JT|DPK|DPL|HTKY)\\d{9,20}\\b",
+    "\\b[A-Z]{2}\\d{9}[A-Z]{2}\\b",
+    "\\b50\\d{11}\\b",
+    "\\b7\\d{12,13}\\b",
+    "\\b43\\d{13}\\b",
+    "\\b46\\d{13}\\b",
+    "\\b79\\d{13}\\b",
+    "\\b777\\d{12}\\b",
+    "\\b77203\\d{10}\\b",
+    "\\b7353\\d{10}\\b",
+    "\\b43415\\d{10}\\b",
+    "\\b31250\\d{10}\\b",
+    "\\b268\\d{9}\\b",
+    "\\b368\\d{9}\\b",
+    "\\b58\\d{10}\\b"
+  ],
+  "extractionRegexes": [
+    "\\b([A-Z]{2}\\d{9}[A-Z]{2}|\\d{9,22})\\b"
+  ],
+  "parseAfterRedirect": false,
+  "target": {
+    "type": "url",
+    "template": "",
+    "packageName": "com.Kingdee.Express",
+    "action": "android.intent.action.VIEW"
+  },
+  "createdAt": 1785677553522
+}

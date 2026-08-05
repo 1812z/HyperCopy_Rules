@@ -1,0 +1,23 @@
+{
+  "id": "bilibili_following_detail",
+  "name": "B站动态",
+  "category": "link",
+  "enabled": true,
+  "actionMode": "parse_and_open",
+  "matchRegex": ".*[tm].bilibili.com\/(opus\/|dynamic\/)?\\d+.*",
+  "parameterRegex": ".*[tm].bilibili.com\/(opus\/|dynamic\/)?(\\d+).*",
+  "triggerRegexes": [
+    ".*[tm].bilibili.com\/(opus\/|dynamic\/)?\\d+.*"
+  ],
+  "extractionRegexes": [
+    ".*[tm].bilibili.com\/(opus\/|dynamic\/)?(\\d+).*"
+  ],
+  "parseAfterRedirect": false,
+  "target": {
+    "type": "url",
+    "template": "bilibili:\/\/following\/detail\/${r1_2}",
+    "packageName": "tv.danmaku.bili",
+    "action": "android.intent.action.VIEW"
+  },
+  "createdAt": 1784890744587
+}
