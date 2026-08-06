@@ -1,0 +1,23 @@
+{
+  "id": "cloud_link_夸克网盘_com.quark.clouddrive",
+  "name": "夸克网盘",
+  "category": "link",
+  "enabled": true,
+  "actionMode": "direct_open",
+  "matchRegex": "pan\\.quark\\.cn",
+  "parameterRegex": ".*(.+).*",
+  "triggerRegexes": [
+    "pan\\.quark\\.cn"
+  ],
+  "extractionRegexes": [
+    ".*(.+).*"
+  ],
+  "parseAfterRedirect": false,
+  "target": {
+    "type": "url",
+    "template": "",
+    "packageName": "com.quark.clouddrive",
+    "action": "android.intent.action.MAIN"
+  },
+  "createdAt": 1782893786187
+}
