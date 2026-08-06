@@ -1,0 +1,24 @@
+{
+  "id": "cloud_link_百度网盘_com.baidu.netdisk",
+  "name": "百度网盘",
+  "category": "link",
+  "enabled": true,
+  "actionMode": "direct_open",
+  "matchRegex": "pan\\.baidu\\.com|yun\\.baidu\\.com",
+  "parameterRegex": ".(.+).",
+  "triggerRegexes": [
+    "pan\\.baidu\\.com",
+    "yun\\.baidu\\.com"
+  ],
+  "extractionRegexes": [
+    ".(.+)."
+  ],
+  "parseAfterRedirect": false,
+  "target": {
+    "type": "url",
+    "template": "",
+    "packageName": "com.baidu.netdisk",
+    "action": "android.intent.action.MAIN"
+  },
+  "createdAt": 1785929387000
+}
