@@ -1,0 +1,40 @@
+{
+  "id": "cloud_text_快递单号_菜鸟查件",
+  "name": "快递单号-菜鸟查件",
+  "category": "express",
+  "enabled": true,
+  "actionMode": "direct_open",
+  "notificationMode": "none",
+  "priority": 100,
+  "matchRegex": "\\b(?:(?:SF)\\d{12,15}|(?:YTO)\\d{13}|(?:YT)\\d{10,13}|(?:ZTO|ZT)\\d{12,13}|(?:STO)\\d{12,15}|(?:YD)\\d{13}|(?:EMS)\\d{9,11}|(?:JD|JDB|JDC|JDD|JDG)\\d{13,15}|(?:JTSD|JTO|JT)\\d{12,13}|(?:DBL|DPK|DPL)\\d{10,12}|(?:HTKY)\\d{12}|(?:ZJS)\\d{9,12}|(?:ANEKY|ANE)\\d{9,20}|(?:BTWYL)\\d{9,20}|(?:ZTOKY)\\d{9,20}|(?:YDKY)\\d{9,20}|(?:CNSD)\\d{9,20}|(?:SXJD)\\d{9,20}|(?:YMDD)\\d{9,20}|(?:KYSY)\\d{9,20}|(?:XFEX)\\d{9,20}|(?:FW)\\d{9,20}|(?:US)\\d{9,20}|(?:TT)\\d{9,20}|(?:PA|PB)\\d{12}|[A-Z]{2}\\d{9}[A-Z]{2}|50\\d{11}|7\\d{12,13}|43\\d{13}|46\\d{13}|79\\d{13}|777\\d{12}|77203\\d{10}|7353\\d{10}|43415\\d{10}|31250\\d{10}|268\\d{9}|368\\d{9}|58\\d{10})\\b",
+  "parameterRegex": "\\b([A-Z]{2,6}\\d{9,20}|[A-Z]{2}\\d{9}[A-Z]{2}|\\d{9,22})\\b",
+  "triggerRegexes": [
+    "\\b(?:(?:SF)\\d{12,15}|(?:YTO)\\d{13}|(?:YT)\\d{10,13}|(?:ZTO|ZT)\\d{12,13}|(?:STO)\\d{12,15}|(?:YD)\\d{13}|(?:EMS)\\d{9,11}|(?:JD|JDB|JDC|JDD|JDG)\\d{13,15}|(?:JTSD|JTO|JT)\\d{12,13}|(?:DBL|DPK|DPL)\\d{10,12}|(?:HTKY)\\d{12}|(?:ZJS)\\d{9,12}|(?:ANEKY|ANE)\\d{9,20}|(?:BTWYL)\\d{9,20}|(?:ZTOKY)\\d{9,20}|(?:YDKY)\\d{9,20}|(?:CNSD)\\d{9,20}|(?:SXJD)\\d{9,20}|(?:YMDD)\\d{9,20}|(?:KYSY)\\d{9,20}|(?:XFEX)\\d{9,20}|(?:FW)\\d{9,20}|(?:US)\\d{9,20}|(?:TT)\\d{9,20}|(?:PA|PB)\\d{12})\\b",
+    "\\b[A-Z]{2}\\d{9}[A-Z]{2}\\b",
+    "\\b50\\d{11}\\b",
+    "\\b7\\d{12,13}\\b",
+    "\\b43\\d{13}\\b",
+    "\\b46\\d{13}\\b",
+    "\\b79\\d{13}\\b",
+    "\\b777\\d{12}\\b",
+    "\\b77203\\d{10}\\b",
+    "\\b7353\\d{10}\\b",
+    "\\b43415\\d{10}\\b",
+    "\\b31250\\d{10}\\b",
+    "\\b268\\d{9}\\b",
+    "\\b368\\d{9}\\b",
+    "\\b58\\d{10}\\b"
+  ],
+  "extractionRegexes": [
+    "\\b([A-Z]{2,6}\\d{9,20}|[A-Z]{2}\\d{9}[A-Z]{2}|\\d{9,22})\\b"
+  ],
+  "parseAfterRedirect": false,
+  "target": {
+    "type": "url",
+    "template": "",
+    "packageName": "com.cainiao.wireless",
+    "action": "android.intent.action.VIEW"
+  },
+  "createdAt": 1785677553522,
+  "clearClipboardAfterJump": false
+}
