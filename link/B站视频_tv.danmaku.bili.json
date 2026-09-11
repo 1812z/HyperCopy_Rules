@@ -5,7 +5,7 @@
   "enabled": true,
   "actionMode": "parse_and_open",
   "matchRegex": ".*bilibili\\.com.*",
-  "parameterRegex": ".*\\\/video\\\/(BV[0-9A-Za-z]+).*",
+  "parameterRegex": ".*\\\/video\\\/((?:BV[0-9A-Za-z]+|av[0-9]+)).*",
   "target": {
     "type": "url",
     "template": "bilibili:\/\/video\/${p1}",
